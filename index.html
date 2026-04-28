@@ -340,9 +340,7 @@
         }
 
         .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-light);
+            display: none;
         }
 
         .feature-card h3 {
@@ -594,7 +592,7 @@
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#modules" class="nav-link">Modules</a>
                 <a href="#pricing" class="nav-link">Pricing</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#documentation" class="nav-link">Documentation</a>
             </nav>
         </div>
     </header>
@@ -610,11 +608,11 @@
                 researchers, and intelligence professionals.
             </p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="document.getElementById('download').scrollIntoView({behavior: 'smooth'})">
-                    GET STARTED
-                </button>
-                <a href="https://github.com" class="btn">
-                    GITHUB REPOSITORY
+                <a href="#download" class="btn btn-primary">
+                    DOWNLOAD
+                </a>
+                <a href="#documentation" class="btn">
+                    DOCUMENTATION
                 </a>
             </div>
         </div>
@@ -632,39 +630,33 @@
 
             <div class="grid grid-3">
                 <div class="feature-card">
-                    <div class="feature-icon">👤</div>
                     <h3>Person Reconnaissance</h3>
-                    <p>Email profiling, username searches, social media analysis, and face recognition technology for comprehensive person identification.</p>
+                    <p>Comprehensive identity profiling through email analysis, social media mapping, and public records aggregation. Identify targets through alternative usernames and digital footprints across platforms.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🌐</div>
                     <h3>Network Intelligence</h3>
-                    <p>IP geolocation, domain analysis, WHOIS lookups, and Shodan integration for complete network mapping and device discovery.</p>
+                    <p>Complete network infrastructure mapping via geolocation data, ISP identification, and autonomous system analysis. Integrate with Shodan for device discovery and threat assessment.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Communication Analysis</h3>
-                    <p>Phone number reverse lookup, carrier information, and telecommunication metadata extraction for communication intelligence.</p>
+                    <h3>Telecommunications</h3>
+                    <p>Advanced phone number intelligence including carrier identification, number validation, and historical registration data. Extract communication patterns from telecommunications metadata.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
                     <h3>Digital Forensics</h3>
-                    <p>EXIF data extraction, metadata analysis, and file forensics for evidence collection and digital investigation.</p>
+                    <p>Extract and analyze EXIF data, file metadata, and embedded forensic artifacts. Uncover hidden information in documents, images, and multimedia files for evidence collection.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🌑</div>
-                    <h3>Dark Web & Crypto</h3>
-                    <p>Underground marketplace monitoring, cryptocurrency wallet tracking, and blockchain transaction analysis.</p>
+                    <h3>Dark Web & Cryptocurrency</h3>
+                    <p>Monitor underground marketplaces and threat actors. Track cryptocurrency wallets and blockchain transactions for financial intelligence and threat correlation.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🔐</div>
                     <h3>Breach Intelligence</h3>
-                    <p>Compromised database searches, password leak detection, and data breach monitoring with real-time alerts.</p>
+                    <p>Search compromised credential databases and monitor data breach notifications. Identify exposed personal and corporate information across multiple leak sources.</p>
                 </div>
             </div>
         </div>
@@ -741,21 +733,23 @@
     <!-- Code Example -->
     <section class="section">
         <div class="container">
-            <h2 style="margin-bottom: 2rem;">Quick Start</h2>
+            <h2 style="margin-bottom: 2rem;">Installation</h2>
             
             <div class="code-block">
                 <code>
-$ git clone https://github.com/yourusername/NullTrace.git<br>
-$ cd NullTrace<br>
-$ python -m venv venv<br>
-$ venv\Scripts\activate<br>
-$ pip install -r config/requirements.txt<br>
-$ python main.py<br>
+# Clone the repository<br>
+git clone https://github.com/yourusername/NullTrace.git<br>
+cd NullTrace<br>
 <br>
-[>] ███▄▄▄▄   ███    █▄   ▄█        ▄█                ███        ▄████████<br>
-[>] ███▀▀▀██▄ ███    ███ ███       ███            ▀█████████▄   ███    ███<br>
-[>] NULLTRACE OSINT FRAMEWORK v1.0 - READY<br>
-[>] Select an option: 
+# Create virtual environment<br>
+python -m venv venv<br>
+source venv/bin/activate  # On Windows: venv\Scripts\activate<br>
+<br>
+# Install dependencies<br>
+pip install -r config/requirements.txt<br>
+<br>
+# Run the application<br>
+python main.py
                 </code>
             </div>
         </div>
@@ -773,63 +767,63 @@ $ python main.py<br>
 
             <div class="grid pricing-grid">
                 <div class="pricing-card">
-                    <div class="pricing-name">Community</div>
+                    <div class="pricing-name">Open Source</div>
                     <div class="pricing-price">Free</div>
-                    <div class="pricing-period">Forever</div>
+                    <div class="pricing-period">MIT Licensed</div>
                     <ul class="pricing-features">
                         <li>All 40+ OSINT modules</li>
-                        <li>Core API integrations</li>
-                        <li>Educational tutorials</li>
+                        <li>Full source code access</li>
                         <li>Community support</li>
                         <li>Regular updates</li>
+                        <li>Self-hosted deployment</li>
                     </ul>
-                    <button class="btn" style="width: 100%; margin-top: 1.5rem;">Get Started</button>
+                    <a href="#download" class="btn" style="width: 100%; margin-top: 1.5rem; display: block; text-align: center;">Download</a>
                 </div>
 
                 <div class="pricing-card featured">
-                    <div class="pricing-badge">POPULAR</div>
+                    <div class="pricing-badge">RECOMMENDED</div>
                     <div class="pricing-name">Professional</div>
-                    <div class="pricing-price">$29</div>
+                    <div class="pricing-price">$49</div>
                     <div class="pricing-period">Per month</div>
                     <ul class="pricing-features">
-                        <li>Everything in Community</li>
-                        <li>Premium API access</li>
-                        <li>Priority support</li>
-                        <li>Advanced modules</li>
-                        <li>Custom integrations</li>
-                        <li>Results database</li>
+                        <li>All open source features</li>
+                        <li>Premium API integrations</li>
+                        <li>Priority email support</li>
+                        <li>Advanced data sources</li>
+                        <li>Custom configuration</li>
+                        <li>Results archiving</li>
                     </ul>
-                    <button class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">Subscribe Now</button>
+                    <a href="#" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem; display: block; text-align: center;">Purchase License</a>
                 </div>
 
                 <div class="pricing-card">
                     <div class="pricing-name">Enterprise</div>
                     <div class="pricing-price">Custom</div>
-                    <div class="pricing-period">Per month</div>
+                    <div class="pricing-period">Quoted per requirements</div>
                     <ul class="pricing-features">
-                        <li>Everything in Professional</li>
-                        <li>Dedicated support</li>
-                        <li>Custom modules</li>
-                        <li>API access</li>
-                        <li>Team licenses</li>
-                        <li>SLA guarantee</li>
+                        <li>All professional features</li>
+                        <li>Dedicated account support</li>
+                        <li>Custom module development</li>
+                        <li>API server deployment</li>
+                        <li>Team licensing</li>
+                        <li>SLA & maintenance</li>
                     </ul>
-                    <button class="btn" style="width: 100%; margin-top: 1.5rem;">Contact Sales</button>
+                    <a href="#" class="btn" style="width: 100%; margin-top: 1.5rem; display: block; text-align: center;">Contact Sales</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Download Section -->
     <section class="section" id="download" style="background: linear-gradient(135deg, rgba(180, 0, 0, 0.1) 0%, rgba(255, 80, 80, 0.05) 100%); padding: 6rem 0;">
         <div class="container" style="text-align: center;">
-            <h2 style="font-size: 2.5rem; border: none;">Ready to Begin Your Investigation?</h2>
-            <p style="margin-bottom: 2rem; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Join hundreds of security professionals, investigators, and researchers using NullTrace for comprehensive intelligence gathering.
+            <h2 style="font-size: 2.5rem; border: none;">Installation & Download</h2>
+            <p style="margin-bottom: 2rem; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                NullTrace is available for Windows, macOS, and Linux. Download the latest version from GitHub or install directly from the command line.
             </p>
             <div class="hero-buttons" style="justify-content: center;">
-                <a href="https://github.com" class="btn btn-primary">Download Now</a>
-                <a href="#contact" class="btn">Get Support</a>
+                <a href="#" class="btn btn-primary">Download Latest Release</a>
+                <a href="#documentation" class="btn">Installation Guide</a>
             </div>
         </div>
     </section>
@@ -838,48 +832,48 @@ $ python main.py<br>
     <footer>
         <div class="container">
             <div class="footer-section">
-                <h4>NULLTRACE</h4>
+                <h4>Project</h4>
                 <ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#modules">Modules</a></li>
                     <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="https://github.com">Repository</a></li>
+                    <li><a href="#">Source Code</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
-                <h4>Resources</h4>
+                <h4>Documentation</h4>
                 <ul>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#documentation">Getting Started</a></li>
                     <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Module Guide</a></li>
+                    <li><a href="#">Configuration</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
-                <h4>Community</h4>
+                <h4>Support</h4>
                 <ul>
-                    <li><a href="#">Discord Server</a></li>
                     <li><a href="#">GitHub Issues</a></li>
-                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">FAQ</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="#">Report Security Issue</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h4>Legal</h4>
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">License</a></li>
+                    <li><a href="#">MIT License</a></li>
+                    <li><a href="#">Terms of Use</a></li>
                     <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Privacy</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 NullTrace Project. All rights reserved. | Intelligence Without a Trace</p>
+            <p>&copy; 2024 NullTrace. Licensed under MIT License. See repository for details.</p>
         </div>
     </footer>
 
